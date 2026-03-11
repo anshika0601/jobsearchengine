@@ -81,7 +81,10 @@ wait.until(
         (By.CSS_SELECTOR, ".jobs-search-results-list")
     )
 )
+print("Current URL:", driver.current_url)
+print("Page title:", driver.title)
 
+print("Page source length:", len(driver.page_source))
 
 # -------------------------------
 # STEP 4: SCROLL JOB LIST
